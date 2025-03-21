@@ -24,12 +24,12 @@ Total requests - 870
 Unique Names - 6720
 All Names including duplicates - 8660
 
-After running v2&v3 for v2 - 
+After running v2&v3_test.py for v2 - 
 Total requests - 1560
 Unique Names - 7873
 All Names including duplicates - 11041
 
-After running v2&v3 for v3 - 
+After running v2&v3_test.py for v3 - 
 Total requests - 1560
 Unique Names - 7156
 All Names including duplicates - 10585
