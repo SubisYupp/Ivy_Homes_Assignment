@@ -19,3 +19,22 @@ There were different responses for inputs like {aa,ab,a1,ba,1a,1d,1v....} and th
 4) only two character combinations yielded results like {ab,bb,bc,gc} and not three letter or more inputs like {aaa,avn,dndnd.........}
 5) Some names were repeated so to find unique names i stored all the results in set while for all names i saved it in a list
    
+So after running the files v1_test.py the details are-
+Total requests - 870
+Unique Names - 6720
+All Names including duplicates - 8660
+
+After running v2&v3 for v2 - 
+Total requests - 1560
+Unique Names - 7873
+All Names including duplicates - 11041
+
+After running v2&v3 for v3 - 
+Total requests - 1560
+Unique Names - 7156
+All Names including duplicates - 10585
+
+
+
+
+
