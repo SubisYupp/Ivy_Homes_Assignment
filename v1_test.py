@@ -1,7 +1,13 @@
 import time
 import requests
 
-#so our base logic for the code is to get the names form the API but the main problem in that the number of combinations is greater than the rate limit so we need to wait for the rate limit to reset so what we do is since we have determined the rate limit reset time before we can rerequest agaun after the rate limit is reset and till that time the operations are paused and we use two variables for it current_request_count and total_requests , current_request_count is used to keep track of the number of requests made before hitting the rate limit and total_requests is used to keep track of the total number of requests made till now and we also have a set DistinctNames to store the unique names and a list AllNames to store all the names including duplicates
+"""so our base logic for the code is to get the names form the API but the main problem in that the number of combinations 
+is greater than the rate limit so we need to wait for the rate limit to reset so what we do is since we have determined 
+the rate limit reset time before we can rerequest again after the rate limit is reset and till that time the operations 
+are paused and we use two variables for it current_request_count and total_requests , current_request_count is used to 
+keep track of the number of requests made before hitting the rate limit and total_requests is used to keep track of the 
+total number of requests made till now and we also have a set DistinctNames to store the unique names and a list 
+AllNames to store all the names including duplicates"""
 
 version = "v1"  
 rate_limits = {"v1": 100, "v2": 50, "v3": 80} 
