@@ -17,7 +17,7 @@ rate_limit = rate_limits[version]
 reset_time = reset_times[version] 
 
 # this includes all possible base characters that give results when requested as single or paired with any other character
-characters = "abcdefghijklmnopqrstuvwxyz#&+"
+characters = " abcdefghijklmnopqrstuvwxyz#&+"
 
 url = f"http://35.200.185.69:8000/{version}/autocomplete?query={{}}"
 
