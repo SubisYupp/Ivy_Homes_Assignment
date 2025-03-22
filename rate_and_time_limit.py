@@ -1,10 +1,15 @@
-# so to determine the rate limit and the time required to reset the rate limit , I have written a python script that sends requests to the API and checks the response status code. If the response status code is 429, it means the rate limit is reached. The script then waits for 5 seconds and sends a test request to check if the rate limit is reset. If the test request is successful, it calculates the time taken to reset the rate limit. The script continues to send requests until the rate limit is reached.
+"""so to determine the rate limit and the time required to reset the rate limit ,
+I have written a python script that sends requests to the API and checks the response status code. 
+If the response status code is 429, it means the rate limit is reached. 
+The script then waits for 5 seconds and sends a test request to check if the rate limit is reset. 
+If the test request is successful, it calculates the time taken to reset the rate limit. 
+The script continues to send requests until the rate limit is reached."""
 
 import requests
 import time
 
 
-url = "http://35.200.185.69:8000/v2/autocomplete?query=a"
+url = "http://35.200.185.69:8000/v2/autocomplete?query=a" # we test it with a sample query "a" 
 count = 0  # this stores the number of requests
 rate_limit_start_time = None  # it tracks the time when rate limit is reached so that we can calculate the reset time
 
